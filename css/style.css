@@ -1,0 +1,117 @@
+
+/*-- Regular font -- */
+:root{
+    --brand-color: #FC93AD;
+    --brand-grey: #FEFDFB;
+    --brand-dark: #1F1F1F;
+    --brand-color-dark: #AA0144;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+}
+body{
+    background-color: var(--brand-dark);
+    font-family: 'Playful_Display', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+/* -- Links --*/
+.link{
+    color:var(--brand-color);
+    text-align: center;
+    text-decoration: none;
+}
+.link:hover{
+    color: var(--brand-color-dark);
+}
+.header-button{
+    color:var(--brand-color);
+    border: 4px solid var(--brand-color-dark);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 9px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    text-decoration: none;
+    padding: 8px;
+}
+.header-button:hover{
+    background-color: transparent;
+    color: var(--brand-color-dark);
+}
+/* -- Header -- */
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    margin: 20px;
+}
+.header-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* -- Hero-section --*/
+.hero-section .part1{
+    padding-top: 252px;
+    padding-bottom: 0;
+    background-image: url(./images/hero_main1.jpg);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-size: contain;
+    border-left: solid 5px var(--brand-color-dark);
+    border-right: solid 5px var(--brand-color-dark);
+}
+.hero-section .part2{
+    background-color: var(--brand-dark);
+    background-repeat:no-repeat;
+    background-position: center top;
+    margin: 0;
+}
+.hero-title{
+    color: var(--brand-grey);
+    font-family: 'Playfair_Display', serif;
+    font-size: 128px;
+    margin-bottom: 48px;
+    text-align: center;
+    line-height: 1;
+    font-weight: 900;
+}
+.hero-section .part3{
+    padding-bottom: 192px;
+    background-image: url(./images/hero_main2.jpg);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-size: contain;
+    border-left: solid 5px var(--brand-color-dark);
+    border-right: solid 5px var(--brand-color-dark);
+}
+/*-- Footer --*/
+.footer-menu{
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
