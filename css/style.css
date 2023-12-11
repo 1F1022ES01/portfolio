@@ -57,7 +57,7 @@ body{
     align-items: center;
     gap: 40px;
     cursor: pointer;
-    margin: 20px;
+    margin: 0px;
 }
 .header-menu{
     display: flex;
@@ -112,6 +112,10 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.logo{
+    background-color: var(--brand-color);
+    margin: 0;
+    padding: 0;
+}
 
 
