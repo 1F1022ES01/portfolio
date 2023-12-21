@@ -22,7 +22,7 @@
                         <li class="link" href="#gallery-section">Gallery</li>
                         <li class="link" href="#media-section">Social Media</li>
                         <li class="link" href="#contacts-section">Contacts</li>
-                        <li class="link"><a href="#" class="header-button">Book now</a></li>
+                        <button type="button" class="link button modal-btn-open">Замовити дзвінок</button>
                     </ul>
                 </nav>
             </div>
@@ -76,14 +76,26 @@
                 <nav class="footer-nav">
                     <a href=""><img class="logo" src="./css/images/TORA.svg" alt="logo"></a>
                     <ul class="footer-menu">
-                        <li class="link" href="#hero-section">Main</li>
-                        <li class="link" href="#me">About Me</li>
-                        <li class="link" href="#gallery-section">Gallery</li>
-                        <li class="link" href="#media-section">Social Media</li>
-                        <li class="link" href="#contacts-section">Contacts</li>
+                        <li class="link-footer" href="#hero-section">Main</li>
+                        <li class="link-footer" href="#me">About Me</li>
+                        <li class="link-footer" href="#gallery-section">Gallery</li>
+                        <li class="link-footer" href="#media-section">Social Media</li>
+                        <li class="link-footer" href="#contacts-section">Contacts</li>
                     </ul>
                 </nav>
             </div>
         </footer>
+        <div class="backdrop">
+            <div class="modal">
+                <button class="modal-btn-close" type="button">Close</button>
+                <h2>Book now</h2>
+                <p>If you want to book photoshoot, do not hesitate to do it!</p>
+                <form name="contact-form" autocomplete="off" novalidate>
+                    <label for="user-name">Your name</label>
+                    <input type="text" id="user-name"/>
+                </form>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>  
     </body>
 </html>
