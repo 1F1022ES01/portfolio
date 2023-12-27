@@ -22,9 +22,9 @@
                         <li class="link" href="#gallery-section">Gallery</li>
                         <li class="link" href="#media-section">Social Media</li>
                         <li class="link" href="#contacts-section">Contacts</li>
-                        <button type="button" class="link button modal-btn-open">Замовити дзвінок</button>
                     </ul>
                 </nav>
+                <button type="button" class="link button modal-btn-open">Book</button>
             </div>
         </header>
         <main>
@@ -88,11 +88,25 @@
         <div class="backdrop">
             <div class="modal">
                 <button class="modal-btn-close" type="button">Close</button>
-                <h2>Book now</h2>
-                <p>If you want to book photoshoot, do not hesitate to do it!</p>
-                <form name="contact-form" autocomplete="off" novalidate>
-                    <label for="user-name">Your name</label>
-                    <input type="text" id="user-name"/>
+                <h2 class="modal-title">Book now</h2>
+                <p class="form-p">If you want to book photoshoot, do not hesitate to do it!</p>
+                <form name="contact-form" autocomplete="on" novalidate>
+                    <div class="form-field"> 
+                        <input class="form-input" type="text" id="user-name" id="user-name"/>
+                        <label class="form-label visually-hidden" for="user-name">Name</label>
+                    </div>
+
+                    <div class="form-field">
+                        <input class="form-input" type="tel" id="user-tel" id="user-tel"/>
+                        <label class="form-label visually-hidden" for="user-name">Phone number</label>
+                    </div>
+
+                    <div class="form-field">
+                        <input class="form-input" type="email" id="user-email" id="user-email"/>
+                        <label class="form-label visually-hidden" for="user-email">Email</label>
+                    </div>
+
+                    <button class="form-button button" type="submit">Book</button>
                 </form>
             </div>
         </div>
